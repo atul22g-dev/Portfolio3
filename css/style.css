@@ -1,11 +1,8 @@
 /************************************************************ comman css **********************************************/
-
-/*!sc*/
 * {
   box-sizing: border-box;
 }
 
-/*!sc*/
 body,
 html {
   height: 100%;
@@ -15,14 +12,13 @@ html {
   font-display: fallback !important;
 }
 
-/*!sc*/
 body {
   overflow-x: hidden;
   background-color: #f8f8f8;
   color: #383838;
   margin: 0;
 }
-/*!sc*/
+
 a {
   color: #6d83f2;
   -webkit-text-decoration: none;
@@ -31,12 +27,10 @@ a {
   text-decoration: none;
 }
 
-/*!sc*/
 a:hover {
   color: #383838;
 }
 
-/*!sc*/
 h1,
 h2,
 h3,
@@ -48,7 +42,6 @@ h6 {
   color: #383838;
 }
 
-/*!sc*/
 p {
   font-size: 16px;
   margin: 0;
@@ -57,7 +50,6 @@ p {
   color: #383838;
 }
 
-/*!sc*/
 ul {
   list-style: none;
   padding: 0;
@@ -65,18 +57,15 @@ ul {
   line-height: 150%;
 }
 
-/*!sc*/
 .invalid {
   color: #e81b1b !important;
   box-shadow: 0 0 0px 1px #e81b1b;
 }
 
-/*!sc*/
 .active {
   color: #383838;
 }
 
-/*!sc*/
 hr {
   border: 1px solid #c7d0ff;
   margin: 30px 0;
@@ -226,7 +215,6 @@ header {
   color: #6d83f2;
 }
 
-/*!sc*/
 .list-item a:hover {
   cursor: pointer;
   color: #383838;
@@ -276,7 +264,6 @@ main .main .home-bg-img {
   z-index: 1;
 }
 
-/*!sc*/
 .left .text .btna {
   display: block;
   margin: 30px 0;
@@ -321,6 +308,7 @@ main .main .home-bg-img {
 
 .left .desc {
   font-size: 1.06rem;
+  margin-top: 4px;
 }
 
 .left .btn {
@@ -542,6 +530,7 @@ main .main .home-bg-img {
 .Skillsets {
   margin-bottom: 100px;
   position: relative;
+  width: 100%;
 }
 
 .Skillsets .skill__icons {
@@ -550,6 +539,7 @@ main .main .home-bg-img {
 
 .Skillsets .skill__icons svg {
   color: #6d83f2;
+  padding: 10px;
 }
 
 .Skillsets .skills__word-clouds {
@@ -732,7 +722,6 @@ svg:not(:root).Project_html {
   font-size: inherit;
   height: 1em;
   vertical-align: -0.125em;
-  webkit-transform-origin: center center;
   transform-origin: center center;
 }
 
@@ -764,6 +753,7 @@ svg:not(:root).Project_html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
   padding: 30px;
 }
 
@@ -821,6 +811,9 @@ svg:not(:root).Project_html {
 .contact {
   margin-bottom: 200px;
   height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact_con {
@@ -1027,22 +1020,29 @@ footer a:hover {
     padding: 10px;
   }
 
-  .main .left .text {
-    text-align: center;
+  nav {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
     display: flex;
+    flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
-    flex-direction: column;
+    z-index: 1000;
   }
 }
 /* main */
 
 @media (max-width: 768px) {
+  main {
+    max-width: 100vw;
+  }
   .main {
     margin-top: 80px;
   }
 
-  .main .home-bg-img {
+  main .main .home-bg-img {
+    position: absolute;
     top: 0px;
     opacity: 0.8;
   }
@@ -1060,6 +1060,18 @@ footer a:hover {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .main .left .text {
+    text-align: center;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .right .right-box {
+    font-size: 0.6rem;
   }
   .left {
     -webkit-box-pack: justify;
@@ -1094,6 +1106,7 @@ footer a:hover {
 @media (max-width: 768px) {
   .About_me {
     position: relative;
+    padding: 0 15px;
   }
   .About_me .Article_box {
     top: 40px;
@@ -1125,12 +1138,6 @@ footer a:hover {
     padding: 10px 0;
   }
   .Skillsets .skills__word-clouds {
-    display: none;
-  }
-  .Skillsets .skill__icons {
-    padding: 10px 0;
-  }
-  .skills__word-clouds {
     display: none;
   }
 }
@@ -1168,11 +1175,16 @@ footer a:hover {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .Project_data {
+    width: 90vw;
+  }
+}
 /* *******************************************Get in Touch************************************************************* */
 
 @media (max-width: 1000px) {
   .contact_con {
-    width: 100%;
+    width: 90vw;
     padding: 10px;
     margin-top: 50px;
   }
@@ -1212,5 +1224,36 @@ footer a:hover {
     width: 100%;
     height: 200px;
     resize: none;
+  }
+}
+
+/* ******************************************* Footer  ************************************************************ */
+
+@media screen and (max-width: 500px) {
+  .footer_main p {
+    display: none;
+  }
+}
+
+/* ***************************************************************Scroll Bar***************************************************** */
+
+@media (min-width: 450px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 7px;
+    background-color: white;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 450px) {
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(109, 131, 242);
+  }
+}
+
+@media (min-width: 450px) {
+  ::-webkit-scrollbar-track {
+    background-color: white;
   }
 }

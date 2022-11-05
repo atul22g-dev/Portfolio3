@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto&display=swap');
+
 /************************************************************ comman css **********************************************/
 * {
   box-sizing: border-box;
@@ -43,7 +45,8 @@ h6 {
 }
 
 p {
-  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
   margin: 0;
   line-height: 150%;
   font-family: "Karla", sans-serif;
@@ -240,6 +243,10 @@ main .main .home-bg-img {
   z-index: -1;
 }
 
+.main_heading{
+  font-family: 'Libre Baskerville', serif;
+}
+
 .left {
   display: -webkit-box;
   display: -webkit-flex;
@@ -364,6 +371,7 @@ main .main .home-bg-img {
   -moz-letter-spacing: 1px;
   -ms-letter-spacing: 1px;
   letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
 }
 
 .Programming_box {

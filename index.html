@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="../favicon_io/apple-touch-icon.png" />
     <link rel="apple-touch-icon" href="../favicon_io/android-chrome-512x512.png" />
+    <script defer src="js/script.js"></script>
 </head>
 
 <body>
@@ -17,12 +18,24 @@
     <header>
         <div class="header">
             <!-- logo -->
+            <!-- <a aria-current="page" class="logo" href="#">
+                <span>Porfolio3</span>
+            </a> -->
             <a aria-current="page" class="logo" href="#">
                 <span>Porfolio3</span>
             </a>
+
             <!-- Navbar -->
-            <nav>
-                <ul class="list-item">
+            <nav class="nav">
+                <button class="nav-btn">
+                    <!-- <div class="nav-btn-inside is-active"> after  -->
+                    <div id="btn" class="nav-btn-inside"> 
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </button>
+                <ul id="list" class="list">
                     <li class="list-item">
                         <a aria-current="page" href="#home">home</a>
                     </li>
@@ -520,6 +533,5 @@ transition-delay: 500ms;
 </body>
 <!-- Font awesome -->
 <script src="https://kit.fontawesome.com/6a20098ea0.js" crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
 
 </html>

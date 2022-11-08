@@ -511,7 +511,7 @@ main .main .home-bg-img {
 
 .Article {
   position: relative;
-  font-size: 0.5em;
+  font-size: 12px;
   padding: 20px;
   padding-bottom: 30px;
   margin: 20px 10px;
@@ -526,8 +526,6 @@ main .main .home-bg-img {
 .Article,
 .Article p {
   color: #6d83f2;
-	font-size: 15px;
-	
 }
 .Article i {
   position: absolute;

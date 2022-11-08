@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Home</title>
+    <title>Portfolio3</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="../favicon_io/apple-touch-icon.png" />
@@ -29,7 +29,7 @@
             <nav class="nav">
                 <button class="nav-btn">
                     <!-- <div class="nav-btn-inside is-active"> after  -->
-                    <div id="btn" class="nav-btn-inside"> 
+                    <div id="btn" class="nav-btn-inside">
                         <div class="hamburger-box">
                             <div class="hamburger-inner"></div>
                         </div>
@@ -37,16 +37,16 @@
                 </button>
                 <ul id="list" class="list">
                     <li class="list-item">
-                        <a aria-current="page" href="#home">home</a>
+                        <a aria-current="page" class="home-link" href="#homePage">home</a>
                     </li>
                     <li class="list-item">
-                        <a href="#about">about me</a>
+                        <a class="about-link" href="#about">about me</a>
                     </li>
                     <li class="list-item">
-                        <a href="#projects">projects</a>
+                        <a class="project-link" href="#project">projects</a>
                     </li>
                     <li class="list-item">
-                        <a href="#contact">contact</a>
+                        <a class="contact-link" href="#contact">contact</a>
                     </li>
                 </ul>
             </nav>
@@ -55,7 +55,7 @@
 
     <!--*********************************************************** Main************************************************************** -->
     <main>
-        <section id="home" class="main">
+        <section id="home" class="main section-home">
             <img class="home-bg-img" src="img/home-bg.svg" alt="background" />
             <!-- Left -->
             <section class="left">
@@ -163,7 +163,7 @@
             </div>
         </section>
         <!--*********************************************************** About Me ************************************************************** -->
-        <section id="about" class="About_me">
+        <section id="about" class="About_me section-about">
             <!-- Heading -->
             <h2 class="heading">About Me</h2>
             <!-- Background image -->
@@ -175,17 +175,7 @@
                         <div class="gatsby-image-wrapper" style="position: relative; overflow: hidden">
                             <div aria-hidden="true" style="width: 100%; padding-bottom: 100%"></div>
                             <!-- image -->
-                            <img aria-hidden="true" src="img/profile-pic.png" alt="" style="
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-object-fit: cover;
-object-position: center;
-opacity: 1;
-transition-delay: 500ms;
-" />
+                            <img aria-hidden="true" src="img/profile-pic.png" alt="" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;object-fit: cover;object-position: center;opacity: 1;transition-delay: 500ms;" />
                         </div>
                     </div>
                 </div>
@@ -225,7 +215,7 @@ transition-delay: 500ms;
             </div>
         </section>
         <!--********************************************* My Skillsets ************************************************************** -->
-        <section class="Skillsets">
+        <section class="Skillsets section-Skillsets">
             <!-- Heading -->
             <h2 class="heading">My Skillsets</h2>
             <div class="skill__icons">
@@ -294,7 +284,7 @@ transition-delay: 500ms;
 
         <!--*********************************************************** Side Projects ************************************************************** -->
 
-        <section id="projects" style="margin-bottom: 100px" class="Projects">
+        <section id="projects" style="margin-bottom: 100px" class="Projects section-project">
             <!-- Heading -->
             <h2 class="heading">Side Projects</h2>
             <section class="Projects_con">
@@ -462,7 +452,7 @@ transition-delay: 500ms;
                 </section>
             </section>
             <!-- *************************************** Get In Touch ****************************************** -->
-            <section id="contact" class="contact">
+            <section id="contact" class="contact section-contact">
                 <!-- tittle -->
                 <h2 class="heading">Get In Touch</h2>
                 <div class="contact_con">

@@ -1,0 +1,36 @@
+:root {
+  /* comman */
+  --white-color: #fff;
+  --lwhite-color: rgb(234, 234, 234);
+  --black-color: #111;
+  /* main */
+  --main-color: #6d83f2;
+  --secondory-color: #6a98f0;
+  --third-color: linear-gradient(134deg, #6a98f0 0%, #4961dc 99%);
+  --fourth-color: #383838;
+  --fifth-color: #c7d0ff;
+  --box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+  /* my color */
+  --header-color: rgb(248, 248, 248);
+  --headerL-color: #6d83f2;
+  --headerLh-color: #383838;
+  --bg-color: white;
+  --Rbg-color: #383838;
+  --about-color: linear-gradient(134deg, #6a98f0 0%, #4961dc 99%);
+  --aboutbox-color: white;
+  --fotter-color: #fff;
+}
+
+.dark-mode {
+  --fourth-color: #f8f8f8;
+  --fifth-color: #303030;
+  /* my color */
+  --header-color: rgb(35, 35, 35);
+  --headerL-color: #f8f8f8;
+  --headerLh-color: #6a98f0;
+  --bg-color: rgb(25, 25, 25);
+  --Rbg-color: #fff;
+  --about-color: rgb(35, 35, 35);
+  --aboutbox-color: rgb(48, 48, 48);
+  --fotter-color:  #6a98f0;
+}

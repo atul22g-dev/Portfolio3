@@ -49,40 +49,32 @@ document.querySelector(".contact-link").addEventListener("click", (e) => {
 
 // Toggles
 const themeSwitcher = document.getElementById("icon");
-const body = document.getElementsByTagName("body")[0];
-
 const themeSwitcher2 = document.getElementById("modebtn2");
-themeSwitcher2.addEventListener("click", () => {
-  // console.log("dark");
-  if (body.classList == "dark-mode") {
-    body.classList.add("dark-mode");
-    body.classList.remove("dark-mode");
-    localStorage.setItem("theme", "light-mode");
-  } else {
-    body.classList.remove("dark-mode");
-    body.classList.add("dark-mode");
-    localStorage.setItem("theme", "dark-mode");
-  }
-});
-
-// With Local-storage
-
+const body = document.getElementsByTagName("body")[0];
+const svg = document.getElementById('mode-svg');
 themeSwitcher.checked = false;
 
-function clickHandler() {
-  if (this.checked) {
-    body.classList.remove("dark-mode");
+const clickHandler = () => {
+  if (this.checked || body.classList == "light-mode" ) {
+    body.classList.remove("light-mode");
     body.classList.add("dark-mode");
+    svg.src = 'img/sun.svg';
     localStorage.setItem("theme", "dark-mode");
   } else {
-    body.classList.add("dark-mode");
+    body.classList.add("light-mode");
     body.classList.remove("dark-mode");
+    svg.src = 'img/moon.svg';
     localStorage.setItem("theme", "light-mode");
   }
 }
+
+themeSwitcher2.addEventListener("click", clickHandler);
 themeSwitcher.addEventListener("click", clickHandler);
 
-function checkTheme() {
+
+// Change theme
+
+const checkTheme = () => {
   const localStorageTheme = localStorage.getItem("theme");
 
   if (localStorageTheme !== null && localStorageTheme === "dark-mode") {

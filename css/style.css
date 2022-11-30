@@ -4,6 +4,44 @@
 * {
   box-sizing: border-box;
 }
+
+:root {
+  /* comman */
+  --white-color: #fff;
+  --lwhite-color: rgb(234, 234, 234);
+  --black-color: #111;
+  /* main */
+  --main-color: #6d83f2;
+  --secondory-color: #6a98f0;
+  --third-color: linear-gradient(134deg, #6a98f0 0%, #4961dc 99%);
+  --fourth-color: #383838;
+  --fifth-color: #c7d0ff;
+  --box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+  /* my color */
+  --header-color: rgb(248, 248, 248);
+  --headerL-color: #6d83f2;
+  --headerLh-color: #383838;
+  --bg-color: white;
+  --Rbg-color: #383838;
+  --about-color: linear-gradient(134deg, #6a98f0 0%, #4961dc 99%);
+  --aboutbox-color: white;
+  --fotter-color: #fff;
+}
+
+.dark-mode {
+  --fourth-color: #f8f8f8;
+  --fifth-color: #303030;
+  /* my color */
+  --header-color: rgb(35, 35, 35);
+  --headerL-color: #f8f8f8;
+  --headerLh-color: #6a98f0;
+  --bg-color: rgb(25, 25, 25);
+  --Rbg-color: #fff;
+  --about-color: rgb(35, 35, 35);
+  --aboutbox-color: rgb(48, 48, 48);
+  --fotter-color: #6a98f0;
+}
+
 body,
 html {
   height: 100%;
@@ -64,23 +102,6 @@ ul {
   line-height: 150%;
 }
 
-/* .invalid {
-  color: #e81b1b !important;
-  box-shadow: 0 0 0px 1px #e81b1b;
-} */
-
-/* .active {
-  color: var(--fourth-color);
-} */
-
-/* hr {
-  border: 1px solid #c7d0ff;
-  margin: 30px 0;
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-} */
-
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -88,7 +109,8 @@ h1 {
 
 pre {
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: 0.8rem;
+  font-weight: 100;
 }
 
 abbr[title] {
@@ -100,8 +122,8 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bolder;
-  font-size: 1rem;
+  /* font-weight: bolder !important; */
+  color: var(--headerL-color);
 }
 
 code,
@@ -320,10 +342,14 @@ input[type="checkbox"] {
   transition: 0.2s ease all;
 }
 
-.mode{
+.mode {
   width: 65px;
   height: 65px;
-  background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
+  background: linear-gradient(
+    134deg,
+    rgb(106, 152, 240) 0%,
+    rgb(73, 97, 220) 99%
+  );
   border-radius: 50%;
   text-align: center;
   color: white;
@@ -339,12 +365,12 @@ input[type="checkbox"] {
   display: inline-block;
   font-size: inherit;
   height: 1em;
-  vertical-align: -.125em;
+  vertical-align: -0.125em;
 }
-#modebtn{
+#modebtn {
   display: list-item;
 }
-#modebtn2{
+#modebtn2 {
   display: none;
 }
 /********************************************************** Main ******************************************************************/
@@ -384,9 +410,9 @@ main .main .home-bg-img {
 }
 
 .left .text {
-  -webkit-animation: dzpZbq 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s
+  -webkit-animation: slideDownKeyframe 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s
     forwards;
-  animation: dzpZbq 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s forwards;
+  animation: slideDownKeyframe 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s forwards;
   z-index: 1;
 }
 
@@ -460,24 +486,21 @@ main .main .home-bg-img {
 
 .right {
   position: relative;
-  -webkit-animation: dzpZbq 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s
+  -webkit-animation: slideDownKeyframe 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s
     forwards;
-  animation: dzpZbq 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s forwards;
+  animation: slideDownKeyframe 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s forwards;
 }
 
 .right .right-box {
-  padding: 30px 35px;
+  padding: 10px 15px;
   border-radius: 10px;
-  background-color: var(--white-color);
+  font-size: 0.6rem;
+  color: var(--headerL-color);
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--header-color);
   box-shadow: var(--box-shadow);
 }
 
-.right .right-box {
-  font-size: 0.8rem;
-  font-family: "Montserrat", sans-serif;
-  color: var(--headerL-color);
-  background-color: var(--header-color);
-}
 .bold {
   font-weight: 2rem;
 }
@@ -1121,10 +1144,10 @@ footer a {
 /* Header */
 
 @media (max-width: 768px) {
-  #modebtn{
+  #modebtn {
     display: none;
   }
-  #modebtn2{
+  #modebtn2 {
     display: list-item;
   }
   header {
@@ -1537,5 +1560,17 @@ footer a {
 @media (min-width: 450px) {
   ::-webkit-scrollbar-track {
     background-color: white;
+  }
+}
+
+
+/******************************************* KeyFrames *********************************************/
+
+@keyframes slideDownKeyframe {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

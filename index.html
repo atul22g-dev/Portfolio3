@@ -7,21 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Portfolio3</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="demo.css">
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="../favicon_io/apple-touch-icon.png" />
     <link rel="apple-touch-icon" href="../favicon_io/android-chrome-512x512.png" />
     <script defer src="js/script.js"></script>
 </head>
 
-<body>
+<body class="light-mode">
     <!-- ************************************************  Header ******************************************************************** -->
     <header>
         <div class="header">
-            <!-- logo -->
-            <!-- <a aria-current="page" class="logo" href="#">
-                <span>Porfolio3</span>
-            </a> -->
             <a aria-current="page" class="logo" href="#">
                 <span>Porfolio3</span>
             </a>
@@ -29,7 +24,6 @@
             <!-- Navbar -->
             <nav class="nav">
                 <button class="nav-btn">
-                    <!-- <div class="nav-btn-inside is-active"> after  -->
                     <div id="btn" class="nav-btn-inside">
                         <div class="hamburger-box">
                             <div class="hamburger-inner"></div>
@@ -63,22 +57,7 @@
                     <li class="list-item" style="width: auto;" id="modebtn2">
                         <input aria-label="toggle theme" type="checkbox" class="checkbox" id="icon2">
                         <label role="button" aria-label="Toggle Dark Mode" for="darkmode-input" class="mode">
-                            <!-- Light -->
-                            <!-- <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon"
-                                class="svg-inline--fa fa-moon fa-w-16 fa-2x " role="img"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                    d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z">
-                                </path>
-                            </svg> -->
-                            <!-- Dark -->
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sun"
-                                class="svg-inline--fa fa-sun fa-w-16 fa-2x " role="img"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                    d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z">
-                                </path>
-                            </svg>
+                            <img src="img/moon.svg" alt="moon" class="svg-inline--fa fa-sun fa-w-16 fa-2x" id="mode-svg">
                         </label>
                     </li>
                 </ul>
@@ -120,7 +99,7 @@
                         <pre>3        this.name = &quot;<strong>Atul Goyal</strong>&quot;;</pre>
                         <pre>
 4        this.traits = [&quot;<strong>DESIGN</strong>&quot;, &quot;<strong>DEV</strong>&quot;];</pre>
-                        <pre>5        this.age = <!-- -->new Date().getFullYear() - 2004;</pre>
+                        <pre>5        this.age = <!-- -->new Date().getFullYear() - <strong>2004</strong> ;</pre>
                         <pre>6      <!-- -->}</pre>
                         <pre>7  <!-- -->}</pre>
                     </div>
@@ -339,10 +318,10 @@
                             <!-- buttons -->
                             <div class="Project_btns">
                                 <!-- 1 -->
-                                <a class="Project_btn" href="https://github.com/Atugatran/clone-of-netflix">Source Code
+                                <a class="Project_btn" href="https://github.com/atugatran-projects/Netflix-Clone">Source Code
                                 </a>
                                 <!-- 2 -->
-                                <a target="__blank" href="https://atugatran.github.io/clone-of-netflix/"
+                                <a target="__blank" href="https://atugatran-netflix.netlify.app/"
                                     class="Project_btn">Live Demo
                                 </a>
                             </div>
@@ -403,10 +382,10 @@
                             <div class="Project_btns">
                                 <!-- 1 -->
                                 <a class="Project_btn" target="_blank"
-                                    href="https://github.com/Atugatran/YouTube-clone">Source Code
+                                    href="https://github.com/atugatran-projects/YouTube-clone">Source Code
                                 </a>
                                 <!-- 2 -->
-                                <a target="__blank" href="https://atugatran.github.io/YouTube-clone/"
+                                <a target="__blank" href="https://atugatran-projects.github.io/YouTube-clone/"
                                     class="Project_btn">Live Demo
                                 </a>
                             </div>
@@ -478,7 +457,6 @@
                         </div>
                         <!-- side image -->
                         <div class="Side_image">
-                            Image
                             <div id="Libary-one" class="Side_image-img"></div>
                         </div>
                     </div>

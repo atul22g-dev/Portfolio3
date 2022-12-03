@@ -410,9 +410,10 @@ main .main .home-bg-img {
 }
 
 .left .text {
-  -webkit-animation: slideDownKeyframe 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s
+  -webkit-animation: slideDownKeyframe 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    0s forwards;
+  animation: slideDownKeyframe 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s
     forwards;
-  animation: slideDownKeyframe 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s forwards;
   z-index: 1;
 }
 
@@ -486,9 +487,10 @@ main .main .home-bg-img {
 
 .right {
   position: relative;
-  -webkit-animation: slideDownKeyframe 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s
+  -webkit-animation: slideDownKeyframe 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    0s forwards;
+  animation: slideDownKeyframe 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s
     forwards;
-  animation: slideDownKeyframe 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s forwards;
 }
 
 .right .right-box {
@@ -830,6 +832,8 @@ main .main .home-bg-img {
   padding-top: 56.25%;
   background-color: var(--fifth-color);
   border-radius: 10px;
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
 }
 .Side_image-img iframe {
   position: absolute;
@@ -933,18 +937,6 @@ svg:not(:root).Project_html {
   color: var(--Rbg-color);
 }
 
-#Project-one {
-  background-image: url(../img/projects/Netflix.png);
-  background-size: 100% 210%;
-  background-repeat: no-repeat;
-}
-
-#Project-two {
-  background-image: url(../img/projects/YouTube.png);
-  background-size: 100% 210%;
-  background-repeat: no-repeat;
-}
-
 /* <!-- ****************************************Javascript Libraries********************************************** --> */
 .Libraries {
   margin-bottom: 100px;
@@ -954,11 +946,6 @@ svg:not(:root).Project_html {
   margin: 80px 0;
 }
 
-#Libary-one {
-  background-image: url(../img/Libaries/AOS.png);
-  background-size: 100% 130%;
-  background-repeat: no-repeat;
-}
 
 /* *********************************************** Get in Touch ******************************************************* */
 .contact {
@@ -1562,7 +1549,6 @@ footer a {
     background-color: white;
   }
 }
-
 
 /******************************************* KeyFrames *********************************************/
 

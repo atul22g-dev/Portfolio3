@@ -40,12 +40,12 @@ document.querySelector(".project-link").addEventListener("click", (e) => {
 });
 
 // libaries
-const librariesSection = document.querySelector(".section-libraries");
+// const librariesSection = document.querySelector(".section-libraries");
 
-document.querySelector(".libraries-link").addEventListener("click", (e) => {
-  e.preventDefault();
-  librariesSection.scrollIntoView({ behavior: "smooth" });
-});
+// document.querySelector(".libraries-link").addEventListener("click", (e) => {
+//   e.preventDefault();
+//   librariesSection.scrollIntoView({ behavior: "smooth" });
+// });
 // contact
 
 const contctSection = document.querySelector(".section-contact");
@@ -99,7 +99,7 @@ window.onload = checkTheme();
 
 let project = null;
 
-fetch("https://atugatran-projects.github.io/_Apis/Projects/index.json")
+fetch("https://atugatranapi.pages.dev/Projects/index.json")
   .then((res) => res.json())
   .then((result) => {
     project = result;

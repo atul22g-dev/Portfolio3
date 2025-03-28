@@ -99,7 +99,7 @@ window.onload = checkTheme();
 
 let project = null;
 
-fetch("https://atugatranapi.pages.dev/Projects/index.json")
+fetch("https://atualapis.pages.dev/ProjectsApis/Projects.json")
   .then((res) => res.json())
   .then((result) => {
     project = result;
